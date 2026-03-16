@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  /* Clean Industrial Palette (Basada en el Logo Original) */
+  --background: #FFFFFF;       /* Fondo Blanco para que el logo destaque */
+  --foreground: #002856;       /* Azul Stellar (del logo) */
+  
+  --stellar-blue: #002856;     /* El azul de "STELLAR" */
+  --stellar-gray: #6C757D;     /* El gris del isotipo y subtexto */
+  --stellar-light: #F5F7FA;    /* Gris muy claro para paneles */
+  --stellar-border: #E1E8ED;   /* Color para líneas técnicas */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* Agregamos los colores oficiales al tema de Tailwind */
+  --color-stellar-blue: var(--stellar-blue);
+  --color-stellar-gray: var(--stellar-gray);
+  --color-stellar-light: var(--stellar-light);
+  --color-stellar-border: var(--stellar-border);
+}
+
+/* Estética de Ingeniería Limpia */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar con los colores de la marca */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--stellar-light);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--stellar-gray);
+  border: 2px solid var(--stellar-light);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--stellar-blue);
+}
