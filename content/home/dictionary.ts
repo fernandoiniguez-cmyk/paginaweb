@@ -20,7 +20,7 @@ export const homeDictionary = {
     },
     workstation: {
       eyebrow: "Flagship Solution",
-      title: "Custom Automated Workstations Built for Your Process",
+      title: "Automated Testing Workstations Built for Your Process",
       subtitle: "Designed, built and integrated for critical manufacturing processes where precision, repeatability and control are non-negotiable.",
       highlights: [
         { title: "Custom Engineering", desc: "Custom-built for specific production requirements." },
@@ -29,13 +29,7 @@ export const homeDictionary = {
         { title: "Critical Industries", desc: "Built for medical, aerospace and electronics applications." }
       ],
       primaryCta: { label: "Request RFQ", href: "#cta" },
-      hotspots: [
-        { x: 80, y: 20, label: "PLC-Controlled Logic" },
-        { x: 25, y: 30, label: "HMI Interface" },
-        { x: 60, y: 45, label: "Custom Precision Tooling" },
-        { x: 50, y: 60, label: "Integrated Structure" },
-        { x: 40, y: 75, label: "Process Assembly Area" }
-      ]
+      hotspots: []
     },
     process: {
       eyebrow: "Engineering Workflow",
@@ -86,13 +80,15 @@ export const homeDictionary = {
     },
     projects: {
       eyebrow: "Applications & Projects",
-      title: "Automation Systems Built for Real Manufacturing Challenges",
-      subtitle: "Examples of automation workstations and systems developed to improve efficiency, precision and process reliability.",
+      title: "Systems Built for Real Manufacturing Challenges",
+      subtitle: "Examples of automation workstations, tooling, and systems developed to improve efficiency, precision, and process reliability.",
       items: [
-        { title: "Precision Assembly Workstation", description: "Automated workstation designed for high-precision assembly processes requiring repeatability and tight tolerances.", imageSrc: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" },
-        { title: "Automated Testing System", description: "Integrated testing workstation for quality control and validation of manufacturing components.", imageSrc: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200" },
-        { title: "Custom Tooling Integration", description: "Automation workstation incorporating custom tooling designed around specific production requirements.", imageSrc: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&q=80&w=1200" },
-        { title: "Process Automation Cell", description: "Integrated automation cell developed to improve production efficiency and process stability.", imageSrc: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=1200" }
+        { title: "Assembly Workstations", description: "Custom automated and semi-automated workstations designed for precise assembly processes.", imageSrc: "/images/proyecto-ensamble.webp" },
+        { title: "Production & Assembly Systems", description: "Integrated systems to scale production while maintaining strict quality control.", imageSrc: "/images/proyecto-produccion.webp" },
+        { title: "Custom Tooling Design & Machining", description: "High-precision custom tooling engineered for specific manufacturing requirements.", imageSrc: "/images/proyecto-custom-tooling.webp" },
+        { title: "Tooling Fabrication & Assembly", description: "End-to-end fabrication and assembly of complex tooling components.", imageSrc: "/images/proyecto-ensamble-tooling.webp" },
+        { title: "Part Transfer Systems", description: "Automated conveyor and transfer systems for efficient material handling on the line.", imageSrc: "/images/proyecto-transporte.webp" },
+        { title: "Die Design & Manufacturing", description: "Design and fabrication of durable dies for high-volume stamping and forming.", imageSrc: "/images/proyecto-troqueles.webp" }
       ]
     },
     crossBorder: {
@@ -170,7 +166,7 @@ export const homeDictionary = {
     },
     workstation: {
       eyebrow: "Solución principal",
-      title: "Estaciones de Trabajo Automatizadas Diseñadas para tu Proceso",
+      title: "Estaciones Automatizadas de Testing Diseñadas para tu Proceso",
       subtitle: "Diseñadas, fabricadas e integradas para procesos críticos de manufactura donde la precisión, la repetibilidad y el control no son negociables.",
       highlights: [
         { title: "Diseño a la Medida", desc: "Diseño custom para requerimientos específicos de producción." },
@@ -179,13 +175,7 @@ export const homeDictionary = {
         { title: "Industrias Críticas", desc: "Diseñadas para aplicaciones médicas, aeroespaciales y electrónicas." }
       ],
       primaryCta: { label: "Solicitar RFQ", href: "#cta" },
-      hotspots: [
-        { x: 80, y: 20, label: "Lógica controlada por PLC" },
-        { x: 25, y: 30, label: "Interfaz HMI" },
-        { x: 60, y: 45, label: "Tooling de precisión custom" },
-        { x: 50, y: 60, label: "Estructura integrada" },
-        { x: 40, y: 75, label: "Área de ensamble específica" }
-      ]
+      hotspots: []
     },
     process: {
       eyebrow: "Flujo de ingeniería",
@@ -236,13 +226,15 @@ export const homeDictionary = {
     },
     projects: {
       eyebrow: "Aplicaciones y proyectos",
-      title: "Sistemas de Automatización Diseñados para Retos Reales de Manufactura",
-      subtitle: "Ejemplos de workstations y sistemas de automatización desarrollados para mejorar eficiencia, precisión y confiabilidad del proceso.",
+      title: "Sistemas Diseñados para Retos Reales de Manufactura",
+      subtitle: "Ejemplos de workstations, tooling y sistemas desarrollados para mejorar la eficiencia, precisión y confiabilidad del proceso.",
       items: [
-        { title: "Workstation de ensamble de precisión", description: "Estación automatizada diseñada para procesos de ensamble de alta precisión con repetibilidad y tolerancias cerradas.", imageSrc: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1200" },
-        { title: "Sistema automatizado de testing", description: "Workstation de prueba integrada para control de calidad y validación de componentes de manufactura.", imageSrc: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=1200" },
-        { title: "Integración de tooling custom", description: "Workstation de automatización con tooling diseñado alrededor de requerimientos específicos de producción.", imageSrc: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?auto=format&fit=crop&q=80&w=1200" },
-        { title: "Celda de automatización de proceso", description: "Celda integrada desarrollada para mejorar eficiencia productiva y estabilidad del proceso.", imageSrc: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&q=80&w=1200" }
+        { title: "Workstations de Ensamble", description: "Estaciones automatizadas y semi-automatizadas diseñadas para procesos de ensamble de alta precisión.", imageSrc: "/images/proyecto-ensamble.webp" },
+        { title: "Producción y Ensamble", description: "Sistemas integrados para escalar la producción manteniendo un estricto control de calidad.", imageSrc: "/images/proyecto-produccion.webp" },
+        { title: "Diseño y Maquinado de Tooling Custom", description: "Ingeniería y maquinado de herramentales de alta precisión para requerimientos específicos.", imageSrc: "/images/proyecto-custom-tooling.webp" },
+        { title: "Fabricación y Ensamble de Tooling", description: "Fabricación integral y ensamble de componentes complejos de herramental.", imageSrc: "/images/proyecto-ensamble-tooling.webp" },
+        { title: "Sistemas de Transporte para Piezas", description: "Sistemas automatizados de transferencia para el manejo eficiente de materiales en la línea.", imageSrc: "/images/proyecto-transporte.webp" },
+        { title: "Diseño y Fabricación de Troqueles", description: "Diseño y fabricación de troqueles duraderos para procesos de formado y estampado.", imageSrc: "/images/proyecto-troqueles.webp" }
       ]
     },
     crossBorder: {

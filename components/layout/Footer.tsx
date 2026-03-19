@@ -23,10 +23,11 @@ const Footer = () => {
           <div className="lg:col-span-4 space-y-6">
             {/* TRUCO MAESTRO: brightness-0 invert convierte el logo oscuro en Blanco Puro */}
             <Link href="/" className="inline-block">
+              {/* AQUÍ ESTÁ EL CAMBIO: h-14 sm:h-16 lo hace mucho más grande */}
               <img 
                 src="/images/stellar-logo.svg" 
                 alt="Stellar Automation" 
-                className="h-9 w-auto brightness-0 invert opacity-90 hover:opacity-100 transition-opacity drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" 
+                className="h-14 sm:h-16 w-auto max-w-[280px] brightness-0 invert opacity-90 hover:opacity-100 transition-opacity drop-shadow-[0_0_8px_rgba(255,255,255,0.3)]" 
               />
             </Link>
             <p className="text-[#8A94A6] text-sm leading-relaxed max-w-sm">

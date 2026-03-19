@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-// Idea 3: Hook de detección de idioma
+// Hook de detección de idioma
 import { useLanguage } from '@/lib/hooks/useLanguage'; 
 // El "Cerebro" del contenido
 import { homeDictionary } from '@/content/home/dictionary';
@@ -14,6 +14,7 @@ import ProcessSection from '@/components/sections/ProcessSection';
 import IndustriesSection from '@/components/sections/IndustriesSection';
 import WhyStellarSection from '@/components/sections/WhyStellarSection';
 import CapabilitiesSection from '@/components/sections/CapabilitiesSection';
+import ManufacturingCapacity from '@/components/sections/ManufacturingCapacity'; // <-- NUEVA SECCIÓN IMPORTADA
 import ProjectsSection from '@/components/sections/ProjectsSection';
 import CrossBorderSection from '@/components/sections/CrossBorderSection';
 import FAQSection from '@/components/sections/FAQSection';
@@ -42,7 +43,7 @@ export default function HomePage() {
         items={content.credibility.items} 
       />
 
-      {/* 3. Flagship Product: Ancla #workstations */}
+     {/* 3. Flagship Product: Ancla #workstations */}
       <div id="workstations">
         <WorkstationFeatureSection 
           eyebrow={content.workstation.eyebrow}
@@ -50,7 +51,6 @@ export default function HomePage() {
           subtitle={content.workstation.subtitle}
           highlights={content.workstation.highlights}
           primaryCta={content.workstation.primaryCta}
-          hotspots={content.workstation.hotspots as any}
         />
       </div>
 
@@ -95,7 +95,12 @@ export default function HomePage() {
         />
       </div>
 
-      {/* 8. Projects/Applications: Ancla #projects */}
+      {/* 8. Manufacturing Capacity (El arsenal de máquinas) */}
+      <div id="manufacturing" className="scroll-mt-24">
+        <ManufacturingCapacity />
+      </div>
+
+      {/* 9. Projects/Applications: Ancla #projects */}
       <div id="projects" className="scroll-mt-24">
         <ProjectsSection 
           eyebrow={content.projects.eyebrow}
@@ -105,16 +110,16 @@ export default function HomePage() {
         />
       </div>
 
-      {/* 9. Cross-Border Advantage */}
+      {/* 10. Cross-Border Advantage */}
       <CrossBorderSection 
         eyebrow={content.crossBorder.eyebrow}
         title={content.crossBorder.title}
         subtitle={content.crossBorder.subtitle}
-        mainText={content.crossBorder.mainText} // <-- CORREGIDO: Faltaba esta línea
+        mainText={content.crossBorder.mainText}
         highlights={content.crossBorder.highlights}
       />
 
-      {/* 10. Technical FAQ: Ancla #faq */}
+      {/* 11. Technical FAQ: Ancla #faq */}
       <div id="faq" className="scroll-mt-24">
         <FAQSection 
           eyebrow={content.faq.eyebrow}
@@ -124,7 +129,7 @@ export default function HomePage() {
         />
       </div>
 
-      {/* 11. Final CTA: Ancla #cta */}
+      {/* 12. Final CTA: Ancla #cta */}
       <div id="cta">
         <CTASection 
           eyebrow={content.cta.eyebrow}

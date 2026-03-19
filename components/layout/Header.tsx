@@ -27,14 +27,21 @@ const Header = () => {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-b ${
         isScrolled 
           ? 'bg-[#F5F7FA]/90 backdrop-blur-md border-[#E1E8ED] py-3 shadow-sm' 
-          : 'bg-[#F5F7FA] border-[#E1E8ED] py-5'
+          : 'bg-[#F5F7FA] border-[#E1E8ED] py-4 sm:py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between">
         
-        {/* Aquí va tu Logo Original (Azul oscuro y Gris) */}
+        {/* Aquí va tu Logo Original - AHORA MÁS GRANDE */}
         <Link href="/" className="flex items-center gap-2 group">
-          <img src="/images/stellar-logo.svg" alt="Stellar Automation" className="h-9 w-auto" />
+          <img 
+            src="/images/stellar-logo.svg" 
+            alt="Stellar Automation" 
+            // CAMBIO AQUÍ: h-12 en celular, h-14 en compu (mucho más grande que el h-9 anterior)
+            className={`w-auto transition-all duration-300 object-contain ${
+              isScrolled ? 'h-10 sm:h-12' : 'h-12 sm:h-14 max-w-[200px] sm:max-w-[250px]'
+            }`} 
+          />
         </Link>
 
         {/* Desktop Nav - Textos en el azul de tu logo */}
