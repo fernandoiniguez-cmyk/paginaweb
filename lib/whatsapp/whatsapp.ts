@@ -4,7 +4,8 @@
  * Location: /lib/whatsapp/whatsapp.ts
  */
 
-const STELLAR_PHONE = "526643755043";
+// ¡AQUÍ ESTÁ EL CAMBIO DEL NÚMERO NUEVO!
+const STELLAR_PHONE = "526648505801";
 
 export type WhatsAppIntent = 'generic' | 'rfq' | 'workstation' | 'engineering' | 'location';
 
@@ -34,6 +35,7 @@ export const getWhatsAppLink = (intent: WhatsAppIntent = 'generic', lang: 'en' |
   const selectedMessage = messages[lang][intent] || messages[lang].generic;
   const encodedMessage = encodeURIComponent(selectedMessage);
   
+  // Esto genera el link final con el número y el texto listo para enviar
   return `https://wa.me/${STELLAR_PHONE}?text=${encodedMessage}`;
 };
 

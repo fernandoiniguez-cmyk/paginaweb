@@ -5,7 +5,7 @@ export const homeDictionary = {
     hero: {
       title: "Industrial Automation & Custom Workstations in Tijuana",
       subtitle: "Engineering solutions for critical manufacturing processes — from concept to full system integration.",
-      primaryCta: { label: "Request Engineering Consultation", href: "#cta" },
+      primaryCta: { label: "Request Engineering Consultation", href: getWhatsAppLink('engineering', 'en') },
       secondaryCta: { label: "Start an Automation Project", href: "#workstations" }
     },
     credibility: {
@@ -28,7 +28,7 @@ export const homeDictionary = {
         { title: "Precision Tooling", desc: "Precision tooling for repeatable manufacturing." },
         { title: "Critical Industries", desc: "Built for medical, aerospace and electronics applications." }
       ],
-      primaryCta: { label: "Request RFQ", href: "#cta" },
+      primaryCta: { label: "Request RFQ", href: getWhatsAppLink('workstation', 'en') },
       hotspots: []
     },
     process: {
@@ -132,7 +132,7 @@ export const homeDictionary = {
           { name: "Projects", href: "#projects" }
         ],
         cta: "Request RFQ",
-        ctaHref: "#cta"
+        ctaHref: getWhatsAppLink('rfq', 'en')
       },
       footer: {
         description: "Advanced engineering and custom automated workstations for critical manufacturing industries in the Cali-Baja region.",
@@ -151,7 +151,7 @@ export const homeDictionary = {
     hero: {
       title: "Automatización Industrial y Estaciones de Trabajo Custom en Tijuana",
       subtitle: "Soluciones de ingeniería para procesos críticos de manufactura — desde el concepto hasta la integración completa del sistema.",
-      primaryCta: { label: "Solicitar consulta de ingeniería", href: "#cta" },
+      primaryCta: { label: "Solicitar consulta de ingeniería", href: getWhatsAppLink('engineering', 'es') },
       secondaryCta: { label: "Iniciar un proyecto de automatización", href: "#workstations" }
     },
     credibility: {
@@ -174,7 +174,7 @@ export const homeDictionary = {
         { title: "Tooling de Precisión", desc: "Tooling de precisión para manufactura repetible." },
         { title: "Industrias Críticas", desc: "Diseñadas para aplicaciones médicas, aeroespaciales y electrónicas." }
       ],
-      primaryCta: { label: "Solicitar RFQ", href: "#cta" },
+      primaryCta: { label: "Solicitar RFQ", href: getWhatsAppLink('workstation', 'es') },
       hotspots: []
     },
     process: {
@@ -278,7 +278,7 @@ export const homeDictionary = {
           { name: "Proyectos", href: "#projects" }
         ],
         cta: "Solicitar RFQ",
-        ctaHref: "#cta"
+        ctaHref: getWhatsAppLink('rfq', 'es')
       },
       footer: {
         description: "Ingeniería avanzada y estaciones de trabajo automatizadas a la medida para industrias críticas de manufactura en la región Cali-Baja.",
