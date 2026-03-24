@@ -141,5 +141,4 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     </Section>
   );
 };
-
 export default HeroSection;
